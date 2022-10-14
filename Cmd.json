@@ -1,0 +1,223 @@
+{
+  "cmd_reset" : {
+    "hex" : "0x70",
+    "name" : "cmd_reset",
+    "description" : "Reset reader."
+  },
+  "cmd_set_uart_baudrate" : {
+    "hex" : "0x71",
+    "name" : "cmd_set_uart_baudrate",
+    "description" : "Set baud rate of serial port."
+  },
+  "cmd_get_firmware_version" : {
+    "hex" : "0x72",
+    "name" : "cmd_get_firmware_version",
+    "description" : "Get firmware version."
+  },
+  "cmd_set_reader_address" : {
+    "hex" : "0x73",
+    "name" : "cmd_set_reader_address",
+    "description" : "Set reader’s address."
+  },
+  "cmd_set_work_antenna" : {
+    "hex" : "0x74",
+    "name" : "cmd_set_work_antenna",
+    "description" : "Set working antenna"
+  },
+  "cmd_get_work_antenna" : {
+    "hex" : "0x75",
+    "name" : "cmd_get_work_antenna",
+    "description" : "Query current working antenna."
+  },
+  "cmd_set_output_power" : {
+    "hex" : "0x76",
+    "name" : "cmd_set_output_power",
+    "description" : "Set RF output power."
+  },
+  "cmd_get_output_power" : {
+    "hex" : "0x77",
+    "name" : "cmd_get_output_power",
+    "description" : "Query current RF output power."
+  },
+  "cmd_set_frequency_region" : {
+    "hex" : "0x78",
+    "name" : "cmd_set_frequency_region",
+    "description" : "Set RF frequency spectrum."
+  },
+  "cmd_get_frequency_region" : {
+    "hex" : "0x79",
+    "name" : "cmd_get_frequency_region",
+    "description" : "Query RF frequency spectrum.."
+  },
+  "cmd_set_beeper_mode" : {
+    "hex" : "0x7A",
+    "name" : "cmd_set_beeper_mode",
+    "description" : "Set reader’s buzzer hehavior"
+  },
+  "cmd_get_reader_temperature" : {
+    "hex" : "0x7B",
+    "name" : "cmd_get_reader_temperature",
+    "description" : "Check reader’s internal temperature."
+  },
+  "cmd_read_gpio_value" : {
+    "hex" : "0x60",
+    "name" : "cmd_read_gpio_value",
+    "description" : "Get GPIO1, GPIO2 status."
+  },
+  "cmd_write_gpio_value" : {
+    "hex" : "0x61",
+    "name" : "cmd_write_gpio_value",
+    "description" : "Set GPIO3, GPIO4 status."
+  },
+  "cmd_set_ant_connection_detector" : {
+    "hex" : "0x62",
+    "name" : "cmd_set_ant_connection_detector",
+    "description" : "Set antenna detector status."
+  },
+  "cmd_get_ant_connection_detector" : {
+    "hex" : "0x63",
+    "name" : "cmd_get_ant_connection_detector",
+    "description" : "Get antenna detector status."
+  },
+  "cmd_set_temporary_output_power" : {
+    "hex" : "0x66",
+    "name" : "cmd_set_temporary_output_power",
+    "description" : "Set RF power without saving to flash."
+  },
+  "cmd_set_reader_identifier" : {
+    "hex" : "0x67",
+    "name" : "cmd_set_reader_identifier",
+    "description" : "Set reader’s identification bytes."
+  },
+  "cmd_get_reader_identifier" : {
+    "hex" : "0x68",
+    "name" : "cmd_get_reader_identifier",
+    "description" : "Get reader’s identification bytes."
+  },
+  "cmd_set_rf_link_profile" : {
+    "hex" : "0x69",
+    "name" : "cmd_set_rf_link_profile",
+    "description" : "Set RF link profile."
+  },
+  "cmd_get_rf_link_profile" : {
+    "hex" : "0x6A",
+    "name" : "cmd_get_rf_link_profile",
+    "description" : "Get RF link profile."
+  },
+  "cmd_get_rf_port_return_loss" : {
+    "hex" : "0x7E",
+    "name" : "cmd_get_rf_port_return_loss",
+    "description" : "Get current antenna port’s return loss."
+  },
+
+
+  "cmd_inventory" : {
+    "hex" : "0x80",
+    "name" : "cmd_inventory",
+    "description" : "Inventory EPC C1G2 tags to buffer."
+  },
+  "cmd_read" : {
+    "hex" : "0x81",
+    "name" : "cmd_read",
+    "description" : "Read EPC C1G2 tag(s)."
+  },
+  "cmd_write" : {
+    "hex" : "0x82",
+    "name" : "cmd_write",
+    "description" : "Write EPC C1G2 tag(s)."
+  },
+  "cmd_lock" : {
+    "hex" : "0x83",
+    "name" : "cmd_lock",
+    "description" : "Lock EPC C1G2 tag(s)."
+  },
+  "cmd_kill" : {
+    "hex" : "0x84",
+    "name" : "cmd_kill",
+    "description" : "Kill EPC C1G2 tag(s)."
+  },
+  "cmd_set_access_epc_match" : {
+    "hex" : "0x85",
+    "name" : "cmd_set_access_epc_match",
+    "description" : "Set tag access filter by EPC."
+  },
+  "cmd_real_time_inventory" : {
+    "hex" : "0x89",
+    "name" : "cmd_real_time_inventory",
+    "description" : "Inventory tags in real time mode."
+  },
+  "cmd_fast_switch_ant_inventory" : {
+    "hex" : "0x8A",
+    "name" : "cmd_fast_switch_ant_inventory",
+    "description" : "Real time inventory with fast ant switch."
+  },
+  "cmd_customized_session_target_inventory" : {
+    "hex" : "0x8B",
+    "name" : "cmd_customized_session_target_inventory",
+    "description" : "Inventory with desired session and inventoried flag."
+  },
+  "cmd_set_impinj_fast_tid" : {
+    "hex" : "0x8C",
+    "name" : "cmd_set_impinj_fast_tid",
+    "description" : "Set impinj FastTID function. (Without saving to FLASH)"
+  },
+  "cmd_set_and_save_impinj_fast_tid" : {
+    "hex" : "0x8D",
+    "name" : "cmd_set_and_save_impinj_fast_tid",
+    "description" : "Set impinj FastTID function. (Save to FLASH)"
+  },
+  "cmd_get_impinj_fast_tid" : {
+    "hex" : "0x8E",
+    "name" : "cmd_get_impinj_fast_tid",
+    "description" : "Get current FastTID setting."
+  },
+
+
+  "cmd_iso18000_6b_inventory" : {
+    "hex" : "0xB0",
+    "name" : "cmd_iso18000_6b_inventory",
+    "description" : "Inventory 18000-6B tag(s)."
+  },
+  "cmd_iso18000_6b_read" : {
+    "hex" : "0xB1",
+    "name" : "cmd_iso18000_6b_read",
+    "description" : "Read 18000-6B tag."
+  },
+  "cmd_iso18000_6b_write" : {
+    "hex" : "0xB2",
+    "name" : "cmd_iso18000_6b_write",
+    "description" : "Write 18000-6B tag."
+  },
+  "cmd_iso18000_6b_lock" : {
+    "hex" : "0xB3",
+    "name" : "cmd_iso18000_6b_lock",
+    "description" : "Lock 18000-6B tag data byte."
+  },
+  "cmd_iso18000_6b_query_lock" : {
+    "hex" : "0xB4",
+    "name" : "cmd_iso18000_6b_query_lock",
+    "description" : "Query lock 18000-6B tag data byte."
+  },
+
+
+  "cmd_get_inventory_buffer" : {
+    "hex" : "0x90",
+    "name" : "cmd_get_inventory_buffer",
+    "description" : "Get buffered data without clearing."
+  },
+  "cmd_get_and_reset_inventory_buffer" : {
+    "hex" : "0x91",
+    "name" : "cmd_get_and_reset_inventory_buffer",
+    "description" : "Get and clear buffered data."
+  },
+  "cmd_get_inventory_buffer_tag_count" : {
+    "hex" : "0x92",
+    "name" : "cmd_get_inventory_buffer_tag_count",
+    "description" : "Query how many tags are buffered."
+  },
+  "cmd_reset_inventory_buffer" : {
+    "hex" : "0x93",
+    "name" : "cmd_get_inventory_buffer_tag_count",
+    "description" : "Clear buffer."
+  }
+}
